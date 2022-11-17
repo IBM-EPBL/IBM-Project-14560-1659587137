@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Web Phishing Detection</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family:Arial, Helvetica, sans-serif
+            }
+            nav{
+                position:relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 70px;
+                padding: 10px 100px;
+                box-sizing:border-box;
+                background:#161616;
+           }
+            nav .logo{
+                padding: 15px;
+                height: 30px;
+                float: left;
+                font-size: 25px;
+                font-weight: bold;
+                color: #fff;
+            }
+            nav ul {
+                list-style:none;
+                float: right;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                font-size: 25px;
+            }
+            nav ul li a{
+                float: right;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 22px;
+
+            }
+            nav ul li a:hover{
+                background: rgb(200, 212, 200);
+                border-radius: 6px;
+                color: rgb(70, 27, 13);
+            }
+            nav ul li a.active{
+                background: #e2472f;
+                border-radius: 6px;
+
+            }
+            .end {
+                overflow: hidden;
+                background-color: rgb(63, 63, 63);
+                position: fixed;
+                bottom: 0;
+                height: 55px;
+                width: 100%;
+            }
+            .continer {
+                align-self:auto;
+            }
+            .button1{
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgb(160, 245, 174), #37ee65);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+  display: none;
+}
+.button2{
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgb(252, 162, 162), #ee3737);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+  display: none;
+}
+
+  </style>
+    </head>
+    <body style="background-image: linear-gradient(to right,#c6ffdd, #fbd786, #f7797d);">
+        <div class="wrap">
+        <nav>
+        <div class="logo" >Web Phishing Detection</div>
+        <ul>
+            <li class="active">
+             <a href="{{ url_for ('index') }}">Home</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+         </div>
+        </nav><br><br>
+        <div class="container">
+        <center>
+            <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: rgb(39, 41, 40);">ABOUT PROJECT </h2>
+            <br>
+             <p style="font-size:20px;font-family: 'Times New Roman', Times, serif;">Web service is one of the key communications software services for the internet.Web phishing is one of many security threats to web services
+					on the internet.Web phishing aims to steal private information,such as usernames,passwords,and credit card details, by way of impersonating a legitimate entity.</p>
+            <p style="font-size:20px;font-family: 'Times New Roman', Times, serif;">This Guided Project mainly focuses on applying a machine-learning algorithm to detect Phishing websites.
+
+In order to detect and predict e-banking phishing websites, we proposed an intelligent, flexible and effective system that is based on using classification algorithms.  We implemented classification algorithms and techniques to extract the phishing datasets criteria to classify their legitimacy.
+                The e-banking phishing website can be detected based on some important characteristics like URL and domain identity, and security and encryption criteria in the final phishing detection rate. Once a user makes a transaction online when he makes payment through an e-banking website our system will use a data mining algorithm to detect whether the e-banking website is a phishing website or not.
+             <br>
+        </div>
+        </center>
+        <br>
+         <!--  <div class="end">
+               <p style="color:rgb(255, 246, 246);
+                         margin-top: 20px;
+                         text-align: center;">
+               </p>
+
+             </div>-->
+           </body>
+           </html>
